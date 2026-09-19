@@ -1,0 +1,59 @@
+{
+  "best_model": "Gradient Boosting",
+  "target_column": "target",
+  "binary_label": "toxic",
+  "threshold": 0.5,
+  "text_feature": "comment_text",
+  "structured_features": [
+    "severe_toxicity",
+    "obscene",
+    "identity_attack",
+    "insult",
+    "threat",
+    "sexual_explicit",
+    "funny",
+    "wow",
+    "sad",
+    "likes",
+    "disagree",
+    "identity_annotator_count",
+    "toxicity_annotator_count"
+  ],
+  "task": "binary_classification",
+  "label_map": {
+    "0": "Non-Toxic",
+    "1": "Toxic"
+  },
+  "model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.9991,
+      "f1": 0.9991,
+      "roc_auc": 1.0,
+      "train_time_s": 102.65
+    },
+    "Linear SVC": {
+      "accuracy": 0.9993,
+      "f1": 0.9993,
+      "roc_auc": 1.0,
+      "train_time_s": 12.47
+    },
+    "Random Forest": {
+      "accuracy": 0.9114,
+      "f1": 0.9054,
+      "roc_auc": 0.9896,
+      "train_time_s": 16.29
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9997,
+      "f1": 0.9997,
+      "roc_auc": 1.0,
+      "train_time_s": 190.79
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9997,
+    "f1": 0.9997,
+    "roc_auc": 1.0,
+    "train_time_s": 190.79
+  }
+}
