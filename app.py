@@ -20,8 +20,8 @@ import streamlit as st
 from pipeline_utils import ColumnSelector, TextSelector  # noqa: F401
 
 # -- Paths -------------------------------------------------------------------
-MODEL_PATH = os.path.join("models", "model.pkl")
-META_PATH  = os.path.join("models", "model_meta.json")
+MODEL_PATH = "model.pkl"
+META_PATH  = "model_meta.json"
 
 # -- Page config -------------------------------------------------------------
 st.set_page_config(
